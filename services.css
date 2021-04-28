@@ -1,0 +1,54 @@
+body{
+	background-color: grey;
+	overflow: scroll;
+ } 
+
+#grid{
+  display: grid;
+   grid-template-columns: auto auto auto auto auto;
+    margin:2% 10%;
+     padding: 2% 0px 2% 6%;
+      color: white;
+    font-size: 20px
+   font-style: italic;
+   background-color: black;
+  text-transform: uppercase;
+ text-decoration: none;
+}
+
+a{
+   color: white;
+   padding: 0.5em 0.5em;
+   font-size: bold;
+}
+#grid a:hover{
+	color: brown;
+	font-size: 25px;
+	font-style: helvetica;
+	cursor: pointer;
+}
+#personalWebsite{
+  color: red;
+  font-size:25px;
+  font-style: helvetica;  
+}
+
+#services{
+  display: grid;
+   grid-template-columns: auto auto;
+    width: 50%;
+     margin-left:20%;
+     margin-top: 5%;
+      border: 5px;
+     border-color: white;
+     border-radius: 20px;
+    grid-row-gap: 10px;
+   grid-column-gap: 20px;   
+}
+  figcaption{
+  text-align: center;
+  background-color: black;
+  font-style: italic;
+  color: white;
+  padding: 2px 2px 2px 2px;
+}

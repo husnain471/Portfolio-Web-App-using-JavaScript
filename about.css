@@ -1,0 +1,46 @@
+body{
+    background-color: grey;
+}
+
+#grid{
+  display: grid;
+   grid-template-columns: auto auto auto auto auto;
+    margin:2% 10%;
+     padding: 2% 0px 2% 6%;
+      color: white;
+    font-size: 20px
+   font-style: italic;
+   background-color: black;
+  text-transform: uppercase;
+ text-decoration: none;
+}
+
+a{
+   color: white;
+   padding: 0.5em 0.5em;
+   font-size: bold;
+}
+#grid a:hover{
+    color: brown;
+    font-size: 25px;
+    font-style: helvetica;
+    cursor: pointer;
+}
+#personalWebsite{
+  color: red;
+  font-size:25px;
+  font-style: helvetica;  
+}
+
+#contentOnAbout{
+  display: grid;
+   background: black;
+    color: white;
+     margin-right: 20%;
+      margin-left: 20%; 
+      border-radius: 10px;
+     text-align: left;
+    font-style: helvetica;
+    padding:5px 5px 5px 5px;
+  font-size: 20px
+}

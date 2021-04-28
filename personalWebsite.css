@@ -1,0 +1,90 @@
+body{
+	background-color: grey;
+	overflow: hidden;
+}
+figure{
+	border: 1px #cccc solid;
+	float: right;
+	border-radius: 10px;
+	margin: 0% 10% 10% 5%;
+}
+
+figcaption{
+  text-align: center;
+  background-color: black;
+  font-style: italic;
+  color: white;
+}
+
+h1{
+  text-align: center;
+  background-color: black;
+  font-style: italic;
+  color: white;
+  border: 1px #cccc solid;
+  float: left;
+  border-radius: 10px;
+  padding: 10px 5px 10px 5px;
+  margin: 5% 5% 5% 19%;
+    font-size: 30px;
+}
+p{
+  text-align: center;
+  background-color: black;
+  font-style: italic;
+  color: white;
+  font-size: 30px;
+  border: 1px #cccc solid;
+  float: left;
+  border-radius: 10px;
+  padding: 10px 5px 10px 5px;
+  margin: 15% 5% 5% -32%;
+}
+#hireButton{
+  border-radius: 10px;
+  padding: 10px 5px 10px 5px;
+  margin: 25% 0% 5% -25%;
+  border-radius: 50px;
+  border-color: black;
+  padding: 15px 15px;
+  text-align: center;
+  font-size: 25px;
+  font-style: bold;
+  background-color: black;
+  color: white;
+}
+#hireButton:hover{
+  background-color: white;
+  color: black;
+}
+
+
+#grid{
+  display: grid;
+   grid-template-columns: auto auto auto auto auto;
+    margin:2% 10%;
+     padding: 2% 0px 2% 6%;
+      color: white;
+    font-size: 20px
+   font-style: italic;
+   background-color: black;
+  text-transform: uppercase;
+ text-decoration: none;
+}
+
+a{
+   color: white;
+   padding: 0.5em 0.5em;
+   font-size: bold;
+}
+#grid a:hover{
+	color: brown;
+	font-size: 25px;
+	font-style: helvetica;
+	cursor: pointer;
+}
+#personalWebsite{
+  color: red;
+  font-size:25px;
+  font-style: helvetica;  
+}

@@ -1,0 +1,84 @@
+body{
+	background-color: grey;
+	overflow: hidden;
+}
+
+#grid{
+  display: grid;
+   grid-template-columns: auto auto auto auto auto;
+    margin:2% 10%;
+     padding: 2% 0px 2% 6%;
+      color: white;
+    font-size: 20px
+   font-style: italic;
+   background-color: black;
+  text-transform: uppercase;
+ text-decoration: none;
+}
+
+a{
+   color: white;
+   padding: 0.5em 0.5em;
+   font-size: bold;
+}
+#grid a:hover{
+	color: brown;
+	font-size: 25px;
+	font-style: helvetica;
+	cursor: pointer;
+}
+#personalWebsite{
+  color: red;
+  font-size:25px;
+  font-style: helvetica;  
+}
+
+#box{
+	display: grid;
+	 margin:2% 10%;
+      padding: 2% 0px 2% 6%;
+       width: 50%;
+       height: 50%;
+        border-color: black; 
+        grid
+}
+
+#submit{
+  border-radius: 10px;
+  padding: 10px 5px 10px 5px;
+  margin: 0% -40% 5% 0%;
+  border-radius: 50px;
+  border-color: black;
+  padding: 15px 15px;
+  text-align: center;
+  font-size: 25px;
+  font-style: bold;
+  background-color: black;
+  color: white;
+}
+#submit:hover{
+  background-color: white;
+  color: black;
+}
+
+input{
+      border-top:hidden;
+      border-right: hidden;
+      border-left:hidden;
+      width: 50%;
+      text-align: center;
+      padding: 2px 2px 2px 2px;
+       font-size:15px;
+      font-style: helvetica;  
+     margin-left:20px;
+    background-color: grey;
+    color: black; 
+}
+
+h6{
+      text-align: center;
+      padding: 5px 5px 5px 5px;
+       font-size:15px;
+      font-style: helvetica;  
+      margin-left:250px;
+}

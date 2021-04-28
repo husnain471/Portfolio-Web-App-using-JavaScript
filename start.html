@@ -1,0 +1,162 @@
+<html>
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>
+        Husnain Ahmad
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link id="theme" rel="stylesheet" type="text/css" href="start.css" />    
+    <script src="start.js"></script>
+    <script src="finalView.js"></script>
+</head>
+
+<body>
+    <div class="grid">
+      <center>
+        <h2>Build Your Profile</h2>
+      </center>
+      <div id="profilePictureCard">
+         <img id="profilePicture" src = "./images/user.png" resizable="true">    
+        <div>
+          <label for="fileUpload">Upload Picture</label>
+          <input type="file" id="fileUpload">
+        </div>
+      </div>
+
+     <div class="personalDetails">
+      <h4> Personal Details</h4>
+        <center>
+        <div id="personalDataArea">
+            <input placeholder="Enter Name" type="text" id="name" required editable /><button class="btn" id="nae"  title="Click if you want to show" onclick="show('name')"><i class="fa fa-eye"></i></button><button class="btn" id="nam"  title="Click if you want to hide" onclick="hide('name')"><i class="fa fa-eye-slash"></i></button><br>
+            <input placeholder="Enter Email" type="email" id="mail"  required editable /><button class="btn" id="mal" title="Click if you want to show" onclick="show('mail')"><i class="fa fa-eye"></i></button><button class="btn" id="nam"  title="Click if you want to hide" onclick="hide('mail')"><i class="fa fa-eye-slash"></i></button><br>            
+            <input placeholder="Enter Date of Birth"  id="DOB" type="date"  required  editable/><button class="btn"  id="DB" title="Click if you want to show" onclick="show('DOB')"><i class="fa fa-eye"></i></button><button class="btn" id="nae"  title="Click if you want to hide" onclick="hide('DOB')"><i class="fa fa-eye-slash"></i></button><br>
+            <input placeholder="Enter Phone Number"  id="number" type="number"  type="" max="11" required  editable/><button class="btn" id="nmber" title="Click if you want to show" onclick="show('number')"><i class="fa fa-eye"></i></button><button class="btn" id="nme"  title="Click if you want to hide" onclick="hide('number')"><i class="fa fa-eye-slash"></i></button><br>
+            <input placeholder="Enter Address"  id="address" type="text" required  editable/><button class="btn" id="addess" title="Click if you want to show" onclick="show('address')"><i class="fa fa-eye"></i></button><button class="btn" id="nme"  title="Click if you want to hide" onclick="hide('address')"><i class="fa fa-eye-slash"></i></button><br>
+        </div>
+      </center>
+     </div>
+
+
+
+
+     <div id="biographyDetails">
+         <h4>
+          Biography
+          <button class="btn" title="Click to delete it" id="okay" onclick="deleteBiographySection(this)"><i class="fa fa-close"></i></button>
+        </h4>
+      <center>
+        <div id="biographyArea">
+          <input placeholder="Description "  id="pB" type="text" required  editable size="70" width="80" pattern="[A-Za-z]">
+        </div>
+      </center>
+     </div>
+
+
+
+
+     <div class="educationalInformation">
+        <h4>Educational Information<button class="btn" onclick="addEduDetails()"><i class="fa fa-plus"></i></h4>
+        <center>
+        <div id="educationArea">
+          
+          <div id="e1">  
+            <select>
+		     	    <option id="e">Degree</option>
+			          <option value="BS">BS</option>
+              <option value="MS">MS</option>
+            <select>
+            <button class="btn" title="Click to delete it" id="degreeDeleteButton" onclick="deleteThisEduDetail(this)"><i class="fa fa-close"></i></button>
+          </div>
+
+          <div id="e2">
+            <select>
+		     	   <option value="degreeName">Degree Name</option>
+			        <option>Medical Sciences</option>
+	          		<option>Engineering</option>
+			           <option>CS & IT</option>
+			             <option> National Defence University, Pakistan</option>
+	                		<option>Management Sciences</option>
+		                	<option>Social Sciences</option>
+			               <option>Biological and Life Sciences</option>
+			             <option>Chemical and Material sciences</option>
+	            		<option>Religious studies</option>
+		          	<option>Media Studies</option>
+			        <option>Political Sciences</option>
+	     	  	</select>	
+            <button class="btn" title="Click to delete it" id="degreeNameDeleteButton" onclick="deleteThisEduDetail(this)"><i class="fa fa-close"></i></button>
+          </div>
+
+            <div id="e3">
+            			<select value="univesityName" editable title="Enter university create new">
+		              	<option>University Name</option>
+			               <option>Capital University of Science & Technology</option>
+		                	<option> Quaid-i-Azam University</option>
+		                  	<option>Pakistan Institute of Engineering and Applied Sciences</option>
+		                     <option> National Defence University, Pakistan</option>
+			                    <option> Allama Iqbal Open University</option>
+	                         <option>National University of Computer and Emerging Sciences</option>
+			                      <option> King Edward Medical University</option>
+			                     <option> National College of Arts</option>
+		                    	<option> University of Engineering and Technology</option>
+			                   <option> Fatima Jinnah Medical University</option>
+			                  <option> Islamia University</option>
+			                 <option> Lahore University of Management Sciences</option>
+			                <option> University of Gujrat</option>
+		 	              <option>University of Karachi</option>
+			            <option> Mirpur University of Science and Technology</option>
+		          	</select>	
+                <button class="btn" title="Click to delete it" id="universityNameFromMenu" onclick="deleteThisEduDetail(this)"><i class="fa fa-close"></i></button>
+            </div>
+
+        </div>
+      </center>
+     </div>
+     
+
+
+
+
+
+     <div class="professionalInformation" ondrop="dropHereForProfessional(event)" ondragover="allowDropForProfessional(event)">
+        <h4>Professional Information<button class="btn" onclick="addSkills()">Skills <i class="fa fa-plus"></i><button class="btn" onclick="addProjects()">Projects <i class="fa fa-plus"></i></button></h4>
+     <center>
+      <div id="professionalArea" draggable="true" >
+            <div id="projectArea" ondragstart="rearrangeProject(event)">
+              <input placeholder="Add you projects"  id="p" type="text" required  editable  pattern="[A-Za-z]"/>
+              <button class="btn" title="Click to delete it" id="projecta" onclick="deleteThisProject(this)"><i class="fa fa-close"></i></button>
+           </div>
+         
+         <div id="skilsArea" draggable="true" ondragstart="rearrangeSkills(event)">
+             <input placeholder="Enter your skills" type="text"  required editable required pattern />
+			        <input type="radio">
+			         <label for="male">Beginner</label>
+			          <input type="radio">
+			         <label for="female">Intermediate</label>
+			        <input type="radio">
+			      <label for="other">Expert</label>
+            <button class="btn" title="Click to delete it" id="skilla" onclick="deleteThisSkill(this)"><i class="fa fa-close"></i></button>
+        </div>
+
+      </div>
+    </center>
+    </div>
+
+    <div class="customSection"  ondrop="dropHere(event)" ondragover="allowDrop(event)">
+      <h4>Custom Section<button class="btn" title="Click to add more details" onclick="addCustomDetails()"><i class="fa fa-plus"></i></button></h4>
+       <center>
+        <div id="customerArea" draggable="true" ondragstart="rearrangeIt(event)" >
+           <input placeholder="--Label--" type="text" id="label" pattern="[A-Za-z] required editable style="cursor:pointer"/>
+           <input placeholder="--Description--" type="text" id="desc"  pattern="[A-Za-z] type="text" required  editable style="cursor:pointer"/>
+           <button class="btn" title="Click to delete it" id="p" onclick="deleteThisDetail(this)"><i class="fa fa-close"></i></button>
+        <div>
+       </center> 
+   </div>
+
+      <center>
+        <button onclick="showTheView()"  id="submit" type="submit" class="btn"name="submit" style="margin-top: 5%; font-size:35px; padding:5px;">Create</button>
+        </center>
+  </div>
+</body>
+</html>
